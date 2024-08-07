@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	color: black;
+	font-family: "Montserrat";
+	font-size: 20px;
+}
+header {
+	background-color: #F1FDFF;
+	/*background-image: url(./assets/medium-shot-woman-holding-ukranian-flag1.png);*/
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	height: 90vh;
+}
+.section {
+	/*min-height: 100vh;*/
+	margin: 2% 6%;
+	/*width: 100%;*/
+}
+h1 {
+	color: #9AD2DE;
+	font-size: 4.65em;
+	text-transform: uppercase;
+	letter-spacing: -2%;
+	line-height: 94.9%;
+	font-weight: 900;
+	width: min-content;
+	padding-top: 1%;
+}
+main h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 3em;
+	margin-top: 50px;
+}
+
+.nav-bar {
+	display: flex;
+	list-style: none;
+}
+.nav-bar a {
+	text-decoration: none;
+	font-size: .9em;
+	color: inherit;
+	padding: 0px 15px;
+}
+.nav-bar li {
+	padding-right: 20px;
+}
+.nav-bar .logo {
+	padding: 3.5% 5%;
+	width: 60px;
+	height: 60px;
+
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav-bar .nav-right {
+	display: inline-flex;
+	justify-content: flex-end;
+
+	padding: 5%;
+	width: 100%;
+	z-index: 1;
+}
+body .blue-btn {
+	background-color: #7AE5FD;
+	border: none;
+	border-radius: 90px;
+	text-transform: uppercase;
+	font-size: .9em;
+	padding: 15px 25px;
+}
+body .blue-btn:hover {
+	border: 3px solid #E9E3DC;
+}
+.section-1 p {
+	font-weight: 300;
+	font-size: 20px;
+
+	margin-top: 5%;
+}
+.section-1 .flag {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 90vh;
+}
+
+/* !SECTION 2 */
+.text-centered {
+	text-align: center;
+}
+.scene-num {
+	font-size: 1.35em;
+	margin: 7px 0;
+}
+.blue-text {
+	color: #73A6B1;
+}
+.scene {
+	background-color: #F1FDFF;
+	border-radius: 2%;
+	width: 100%;
+	margin: 5% auto;
+/*	min-height: auto;*/
+	padding: 40px 40px 10px;
+	/*position: relative;*/
+
+	display: flex;
+	justify-content: space-between;
+}
+.scene .scene-info {
+	width: 50%;
+}
+.scene .scene-info .scene-name {
+	margin-bottom: 10px;
+	font-size: 2.3em;
+}
+.scene h3 {
+	font-weight: normal;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.scene ul {
+	list-style: none;
+	margin-top: 45px;
+}
+.scene .scene-info ul li {
+	font-size: .8em;
+	margin-bottom: 35px;
+}
+.hours {
+	color: #3D8C9D;
+	margin-top: 1%;
+}
+.scene .scene-img .scene-photo {
+	width: 100%;
+	height: auto;
+	padding: 10px 0 40px;
+}
+/*.scene1-info {
+	padding-left: 25px;
+	margin-top: 10px;
+	margin-bottom: 35px;
+}*/
+.centered-btn {
+	position: relative;
+	height: 60px;
+}
+/*#program .blue-btn:nth-last-child(1n) {
+	
+}*/
+.centered-btn .blue-btn {
+	position: absolute;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* !SECTION 3 */
+/*.present-info {
+	margin: 0;
+	background-image: url(./assets/prsnt_back.png);
+	height: 738px;
+	width: 100%;
+}*/
+.present-info {
+	position: relative;
+}
+.present-info > img {
+	height: 738px;
+	width: 1285px;
+	margin-left: -10px;
+}
+.present-container {
+	background-color: #F1FDFF;
+	border-radius: 2%;
+	position: absolute;
+	left: -6%;
+	top: 35%;
+	height: 277px;
+	width: 100%;
+	display: flex;
+}
+.present-container p {
+	font-size: 1.4em;
+	width: 40%;
+	margin: 40px;
+	align-self: center;
+}
+.present-container img {
+	position: absolute;
+}
+.present-container img[alt="t-shirt"] {
+	right: 14%;
+	top: -30%;
+}
+.present-container img[alt="flag"] {
+	right: 12%;
+	bottom: -30%;
+}
+
+/* !SECTION 4 */
+.how-to-get .goal {
+	margin: 77px;
+}
+.goal p {
+	font-size: 1.35em;
+}
+.goal .donation-amount {
+	font-size: 3em;
+	margin-top: 17px;
+}
+.goal .vector {
+	color: #9AD2DE;
+}
+.goal .blue-btn {
+	margin-top: 57px;
+	margin-bottom: 80px;
+}
+
+/* !FOOTER */
+footer {
+	background-color: #F8F9DE;
+}
