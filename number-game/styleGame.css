@@ -1,0 +1,93 @@
+* {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+body{
+	background-color: #cf8da7;
+	color: #3b3759;
+	font-size: 1.2rem;
+}
+
+h1 {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+header {
+	position: relative;
+	height: 35vh;
+}
+main {
+	display: flex;
+}
+.range {
+	margin: 0;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.again {
+	position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.btn {
+	background: #aa5377;
+	color: white;
+	border: 3px solid white;
+	border-radius: 10px;
+	padding: 15px;
+	width: 25%;
+	font-size: 1rem;
+}
+.check {
+	align-items: center;
+}
+.number {
+	text-align: center;
+	width: 15rem;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	border-radius: 20px;
+}
+
+.left, .right {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-top: 40px;
+}
+.left {
+	margin-left: 40px;
+}
+.right .message {
+	margin: 0;
+	margin-bottom: 85px;
+}
+.right p {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.input-number {
+	background: none;
+	border: 3px solid white;
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	width: 60%;
+	text-align: center;
+	margin-left: 20%;
+	display: block;
+	margin-bottom: 3rem;
+	font-size: 1rem;
+}
