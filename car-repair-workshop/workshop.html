@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторемонтні майстерні</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+		<img src="./assets/logo.jpeg" alt="logo" width="80px">
+		<h1>Авторемонтні майстерні Львів</h1>
+	</header>
+
+	<nav class="nav_bar">
+		<ul>
+			<li><a href="#about">Про нас</a></li>
+			<li><a href="#services">Послуги</a></li>
+			<li><a href="#record">Контакти</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section id="about" class="section section-1">
+			<h2>Про Компанію</h2>
+			<img src="./assets/about.jpg" alt="car" width="320px">
+			<p>Автосервіс “Auto Repair Shop” - лідер в сфері обслуговування авто на Заході України. Наші професіонали надають детальну консультацію по ремонту та догляду за автомобілем, а досвідчені майстри допомагають підтримувати технічну складову авто наших клієнтів в прекрасному стані.</p>
+			<p>Ми розуміємо, що якісний сервіс не має бути розкішшю. Тому пропонуємо доступні ціни, не змінюючи якість наших послуг.</p> 
+			<p>Запрошуємо Вас відчути наш професіоналізм і теплий підхід до кожного клієнта.</p>
+		</section>
+
+		<section id="services" class="section section-2">
+			<h2>Наші Послуги</h2>
+			<div class="services-flex">
+				<img src="./assets/services.jpg" alt="services">
+			    <ul>
+					<li>Діагностика авто</li>
+					<li>Сервісне обслуговування</li>
+					<li>Автоелектрика</li>
+					<li>Ремонт ходової</li>
+					<li>Ремонт двигуна</li>
+					<li>Паливна система</li>
+					<li>Гальмівна система</li>
+			    </ul>
+			</div>
+		</section>		
+
+		<section id="record" class="section section-3">
+			<h2>Записатися на сервіс</h2>
+			<div>
+				<p>Для запису зателефонуйте нам:</p><br>
+				<a href="tel:+380678442866"><img src="./assets/phone_btn.png" width="80px"></a><br><br>
+				<p class="p-2">або заповніть форму нижче:</p>
+				<form id="feedback">
+					<input type="text" name="" placeholder="Ім'я" required="required">
+					<input type="email" name="" placeholder="Email@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required">
+					<input type="tel" name="" placeholder="Телефон" pattern="[0-9]{10}" required="required">
+					<input type="text" name="" placeholder="Повідомлення" size="100">
+				</form>
+				<button type="submit" form="feedback">Ок</button>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Email: </p>
+		<a href="malito:autorepair@shop.com" class="footer_info">autorepair@shop.com</a>
+		<p>Телефони:</p>
+		<a href="tel:+380" class="footer_info">+380671111111</a>
+		<p>Графік роботи:</p>
+		<p class="footer_info">Пн. - Пт.: 9:00 - 18:00 <br> Сб.: 9:00 - 15:00</p><br>
+		<p>Політика конфіденційності</p>
+		<p class="footer_info">Ми використовуємо cookie, щоб сайт був зручнішим. Вони містять інформацію про ваші попередні відвідування. Відмовитись від їх використання можна в налаштуваннях браузера.</p>
+		<p>&copy;Auto Repair Shop 2024</p>
+	</footer>
+</body>
+</html>

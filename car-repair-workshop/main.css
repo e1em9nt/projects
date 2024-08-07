@@ -1,0 +1,184 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+ header h1 {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.nav_bar ul {
+    background: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    .nav_bar ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+
+        .nav_bar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+            .nav_bar ul li a:hover {
+                color: #5cb85c;
+            }
+
+.section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Styling for text in Section 1 */
+.section-1 p {
+    text-align: justify;
+    line-height: 1.8;
+    text-indent: 50px;
+}
+
+/* Styling for the unordered list in Section 2 */
+.section-2 ul li {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-2 ul li::before {
+    content: "✔"; /* Bullet character */
+    position: absolute;
+    left: 0;
+    color: #5cb85c; /* Bullet color */
+}
+.section-2 .services-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-2 .services-flex ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px;
+    margin: auto 0;
+}
+.section-2 img {
+    width: 100%;
+}
+
+.section-3 .p-2 {
+    padding-bottom: 20px;
+}
+.section-3 a img {
+    transition: transform 0.3s ease;
+}
+.section-3 a img:hover {
+    transform: scale(1.1); /* Slightly enlarge the phone button on hover */
+}
+
+form#feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section-3 input[type="text"],
+.section-3 input[type="email"],
+.section-3 input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.section-3 button[type="submit"] {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.section-3 button[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+.footer_info {
+    text-decoration: none;
+    color: #c3c4c7;
+}
+
+footer a:hover {
+    color: #a7aaad;
+}
+
+
+@media screen and (min-width: 577px) {
+    .section-2 ul {
+        width: 50%;
+    }
+
+    .section-2 img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header img {
+        width: 60px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-2 ul li {
+         margin: 30px 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-1 p {
+        text-indent: 0px;
+    }
+}
+

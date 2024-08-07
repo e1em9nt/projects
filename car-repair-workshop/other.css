@@ -1,0 +1,24 @@
+.anim {
+	color: #adb5bd;
+}
+.anim:hover, .anim:focus {
+	transition-property: color;
+	transition-duration: 3s;
+	color: #6c757d;
+}
+.slider {
+    border: 2px solid black;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-line {
+    display: flex;
+    transition: all 1s;
+  }
+  .slider-prev{
+  	margin: 3vh 8vw;
+  }
+  .slider-next {
+  	margin: 3vh 0;
+  }
