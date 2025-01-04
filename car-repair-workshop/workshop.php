@@ -162,7 +162,7 @@ echo "Кількість показів сайту: $count";
                         foreach ($data as $row) {
                             echo "<tr>";
                             foreach ($row as $value) {
-                                echo "<td>" . htmlspecialchars($value) . "</td>";
+                                echo "<td>$value</td>";
                             }
                             echo "</tr>";
                         }
@@ -190,6 +190,7 @@ echo "Кількість показів сайту: $count";
         <p>&copy;Auto Repair Shop 2024</p>
     </div>
 </footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"> </script>
 <script src="script_ad.js"></script>
 <script>
         $(function () {
