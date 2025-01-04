@@ -1,0 +1,88 @@
+ @import url('https://fonts.googleapis.com/css2?family=Aladin&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #E0E0E0;
+	min-height: 85vh;
+	font-family: 'EB Garamond', serif; 
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.quote {
+	height: 55vh;
+	width: 80vw;
+	margin: 6% 0;
+	/*border: 2px solid black;*/
+	border-radius: 30px;
+	box-shadow: 10px 5px 8px black, -5px -3px 10px #F5F5F5;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.quote__text {
+	margin: 3%;
+	text-align: center;
+
+	font: bold 3rem 'Aladin', serif;
+}
+.btn-container {
+	position: relative;
+}
+.btn-quote {
+	color: #333333;
+	font-size: 1.2rem;
+	font-family: inherit;
+	border: none;
+	border-radius: 24px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	height: 7vh;
+	width: 27vw;
+	margin-top: 5.5vh;
+
+	background-color: #C0C0C0;
+	transition: background-color 0.3s ease;
+}
+
+.btn-quote:hover {
+	background-color: #A9A9A9;
+}
+.btn-quote:disabled {
+	background-color: #F0F0F0;
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+@media (height <= 540px) {
+	h1 {
+		font-size: 1.4em;
+	}
+	.quote {
+		margin: 3% 0;
+	}
+	.quote__text {
+		font-size: 8vh;
+	}
+	.btn-quote {
+		height: 26px;
+		margin-top: 6.5%;
+	}
+}
