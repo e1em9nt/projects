@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
 
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -36,7 +36,7 @@ h1 {
 	width: min-content;
 	padding-top: 1%;
 }
-main h2 {
+body h2 {
 	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 3em;
@@ -81,6 +81,7 @@ body .blue-btn {
 }
 body .blue-btn:hover {
 	border: 3px solid #E9E3DC;
+	padding: 12px 22px;
 }
 .section-1 p {
 	font-weight: 300;
@@ -183,7 +184,7 @@ body .blue-btn:hover {
 }
 .present-container {
 	background-color: #F1FDFF;
-	border-radius: 2%;
+	border-radius: 2.5%;
 	position: absolute;
 	left: -6%;
 	top: 35%;
@@ -231,4 +232,61 @@ body .blue-btn:hover {
 /* !FOOTER */
 footer {
 	background-color: #F8F9DE;
+	padding: 3% 6%;
+}
+.contact-container {
+	display: flex;
+	gap: 0 258px;
+}
+.contact-container h2 {
+	margin-top: 0;
+}
+.contact-container ul {
+	list-style: none;
+}
+.contact-container ul li {
+	margin-bottom: 57px;
+}
+.contact-num {
+	font-weight: bold;
+}
+.form-box {
+	background-color: #FFFFFF;
+	gap: 89px;
+	height: 503px;
+}
+.form-box img {
+	width: 40%;
+	height: 70%;
+}
+.form-box .input-form {
+	display: block;
+}
+.form-box .input-form p {
+	font-size: 1.35em;
+	margin-bottom: 40px;
+}
+.form-box .input-form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 31px;
+}
+form input[type="text"] {
+	border-radius: 90px;
+	padding: 15px 25px;
+	border: none;
+	background-color: #F8F9DE;
+	color: black;
+	font-size: inherit;
+}
+form input::placeholder {
+	color: black;
+}
+/*.input-form form input[type="button"]:hover {
+	border: none;
+}*/
+.input-form form input:hover, form input:focus {
+	border: none;
+	outline: 2px solid #1E1E1E;
 }
