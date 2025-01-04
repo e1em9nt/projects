@@ -39,7 +39,7 @@ const createNewAccount = function(username, email, pswd) {
 
 pswdInput.addEventListener('input', function() {
 	pswdSrength.classList.remove('hidden');
-	signUpForm.style.top = '10%';
+	signUpForm.style.top = '2%';
 
 	// Starting conditions
 	const minLength = 8;
