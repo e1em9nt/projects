@@ -55,6 +55,7 @@ body h2 {
 }
 .nav-bar li {
 	padding-right: 20px;
+	font-weight: 300;
 }
 .nav-bar .logo {
 	padding: 3.5% 5%;
@@ -67,21 +68,21 @@ body h2 {
 	display: inline-flex;
 	justify-content: flex-end;
 
-	padding: 5%;
+	padding: 4.7%;
 	width: 100%;
 	z-index: 1;
 }
 body .blue-btn {
 	background-color: #7AE5FD;
-	border: none;
+	border: 2px solid transparent;
 	border-radius: 90px;
 	text-transform: uppercase;
 	font-size: .9em;
+	font-weight: 300;
 	padding: 15px 25px;
 }
 body .blue-btn:hover {
-	border: 3px solid #E9E3DC;
-	padding: 12px 22px;
+	border-color: #E9E3DC;
 }
 .section-1 p {
 	font-weight: 300;
@@ -97,6 +98,11 @@ body .blue-btn:hover {
 }
 
 /* !SECTION 2 */
+.section-2 h2 {
+	margin-top: 9vh;
+}
+
+/* !SECTION 3 */
 .text-centered {
 	text-align: center;
 }
@@ -176,18 +182,19 @@ body .blue-btn:hover {
 }*/
 .present-info {
 	position: relative;
+	margin-top: 5vh;
 }
 .present-info > img {
-	height: 738px;
-	width: 1285px;
-	margin-left: -10px;
+	height: 99vh;
+	width: 99%;
+
 }
 .present-container {
 	background-color: #F1FDFF;
 	border-radius: 2.5%;
 	position: absolute;
 	left: -6%;
-	top: 35%;
+	top: 33%;
 	height: 277px;
 	width: 100%;
 	display: flex;
@@ -201,12 +208,12 @@ body .blue-btn:hover {
 .present-container img {
 	position: absolute;
 }
-.present-container img[alt="t-shirt"] {
-	right: 14%;
+.present-container img[alt*="T-shirt"] {
+	right: 13%;
 	top: -30%;
 }
-.present-container img[alt="flag"] {
-	right: 12%;
+.present-container img[alt*="flag"] {
+	right: 10%;
 	bottom: -30%;
 }
 
@@ -244,8 +251,11 @@ footer {
 .contact-container ul {
 	list-style: none;
 }
+.contact-container a {
+	text-decoration: none; 
+}
 .contact-container ul li {
-	margin-bottom: 57px;
+	margin-bottom: 30px;
 }
 .contact-num {
 	font-weight: bold;
@@ -253,18 +263,20 @@ footer {
 .form-box {
 	background-color: #FFFFFF;
 	gap: 89px;
-	height: 503px;
+	height: 455px;
 }
 .form-box img {
-	width: 40%;
+	width: 35vw;
 	height: 70%;
 }
 .form-box .input-form {
 	display: block;
+	margin: 0 auto;
+	width: 40%;
 }
 .form-box .input-form p {
 	font-size: 1.35em;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 .form-box .input-form form {
 	width: 100%;
@@ -275,18 +287,33 @@ footer {
 form input[type="text"] {
 	border-radius: 90px;
 	padding: 15px 25px;
-	border: none;
+	border: 2px solid transparent;
 	background-color: #F8F9DE;
-	color: black;
 	font-size: inherit;
 }
 form input::placeholder {
 	color: black;
+	font-weight: 200;
 }
 /*.input-form form input[type="button"]:hover {
 	border: none;
 }*/
 .input-form form input:hover, form input:focus {
-	border: none;
-	outline: 2px solid #1E1E1E;
+	border-color: #1E1E1E;
 }
+/*(1105px <= width <= 1338px) */
+
+@media (max-width: 1330px) {
+	.section-1 .flag {
+		display: none;
+	}
+	header {
+		background-image: url(./assets/md_woman-holding-ukranian-flag.png);
+	}
+}
+@media (993px <= width <= 1200px) {
+	body {
+		font-size: 18px;
+	}
+}
+
