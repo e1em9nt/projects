@@ -1,81 +1,79 @@
-'use strict'
+"use strict";
 
-const hamburger = document.querySelector('.hamburger');
-const navbar = document.querySelector('.navbar');
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
 
-const buttons = document.querySelectorAll('.btn');
+const buttons = document.querySelectorAll(".btn");
 
-const inputName = document.querySelector('.user-name');
-const inputEmail = document.querySelector('.user-email');
-const inputMsg = document.querySelector('.user-message');
+const inputName = document.querySelector(".user-name");
+const inputEmail = document.querySelector(".user-email");
+const inputMsg = document.querySelector(".user-message");
 
-const formBtn = document.querySelector('.form-btn');
-const error = document.querySelector('.email-error');
+const formBtn = document.querySelector(".form-btn");
+const error = document.querySelector(".email-error");
 
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const slides = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
 // HAMBURGER MENU
-hamburger.addEventListener('click', () => {
-  navbar.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  navbar.classList.toggle("active");
 
-  hamburger.classList.toggle('active');
+  hamburger.classList.toggle("active");
 });
 
-
 // BUTTON
-buttons.forEach( button => {
-  button.addEventListener('click', () => {
-    button.classList.add('visited');
-  })
-})
-
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.add("visited");
+  });
+});
 
 // DOTS
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Отримуємо посилання на елементи
-  const step1 = document.querySelector('.step-1');
-  const step2 = document.querySelector('.step-2');
-  const step3 = document.querySelector('.step-3');
-  const step4 = document.querySelector('.step-4');
+  const step1 = document.querySelector(".step-1");
+  const step2 = document.querySelector(".step-2");
+  const step3 = document.querySelector(".step-3");
+  const step4 = document.querySelector(".step-4");
   let line1, line2, line3;
   function createLines() {
     // Створюємо лінії тільки якщо їх ще немає
     if (!line1) {
       line1 = new LeaderLine(step1, step2, {
-        endSocket: 'top',
-        path: 'grid',
+        endSocket: "top",
+        path: "grid",
         dash: { animation: false },
-        color: '#6248FF',
+        color: "#6248FF",
         startSocketGravity: [109, 0],
         size: 2,
-        startPlug: 'behind',
-        endPlug: 'behind'
+        startPlug: "behind",
+        endPlug: "behind",
       });
     }
     if (!line2) {
       line2 = new LeaderLine(step2, step3, {
-        endSocket: 'top',
-        path: 'grid',
+        endSocket: "top",
+        path: "grid",
         dash: { animation: false },
-        color: '#6248FF',
+        color: "#6248FF",
         size: 2,
-        startPlug: 'behind',
-        endPlug: 'behind'
+        startPlug: "behind",
+        endPlug: "behind",
       });
     }
     if (!line3) {
       line3 = new LeaderLine(step3, step4, {
-        startSocket: 'right',
-        endSocket: 'top',
-        path: 'grid',
+        startSocket: "right",
+        endSocket: "top",
+        path: "grid",
         dash: { animation: false },
-        color: '#6248FF',
+        color: "#6248FF",
         size: 2,
         socketGravity: 100,
-        startPlug: 'behind',
-        endPlug: 'behind'
+        startPlug: "behind",
+        endPlug: "behind",
       });
     }
   }
@@ -103,28 +101,27 @@ document.addEventListener('DOMContentLoaded', function () {
   // Перевіряємо при завантаженні сторінки
   updateLines();
   // Слідкуємо за зміною розміру екрану
-  window.addEventListener('resize', updateLines);
+  window.addEventListener("resize", updateLines);
 });
-
 
 // INPUT FORM
 const messages = [];
 
 const createNewMessage = (name, email, msg) => {
-	let message = {
-		name,
-		email,
-		msg
-	};
-	messages.push(message);
-}
+  let message = {
+    name,
+    email,
+    msg,
+  };
+  messages.push(message);
+};
 
 // VALIDATION
 // Кольори, які будемо використовувати
-const COLOR_DEFAULT = '#E0E0E0';  // світло-сірий (початковий)
-const COLOR_FOCUS   = '#4F4F4F';  // темно-сірий (фокус)
-const COLOR_VALID   = '#0EAC00';  // зелений
-const COLOR_INVALID = '#EB5757';  // червоний
+const COLOR_DEFAULT = "#E0E0E0"; // світло-сірий (початковий)
+const COLOR_FOCUS = "#4F4F4F"; // темно-сірий (фокус)
+const COLOR_VALID = "#0EAC00"; // зелений
+const COLOR_INVALID = "#EB5757"; // червоний
 
 // Функції валідації
 function checkField(field) {
@@ -147,19 +144,18 @@ function setBorderColor(field, color) {
   field.style.borderColor = color;
 }
 
-
 // Функції показати або сховати помилку під email
 function showEmailError() {
-  error.classList.remove('hidden');
-  inputEmail.style.marginBottom = '0';
+  error.classList.remove("hidden");
+  inputEmail.style.marginBottom = "0";
 }
 function hideEmailError() {
-  error.classList.add('hidden');
-  inputEmail.style.marginBottom = '1.5rem';
+  error.classList.add("hidden");
+  inputEmail.style.marginBottom = "1.5rem";
 }
 
 // Логіка при натисканні кнопки "Send"
-formBtn.addEventListener('click', function() {
+formBtn.addEventListener("click", function () {
   // Зчитуємо значення з полів
   const username = inputName.value.trim();
   const email = inputEmail.value.trim();
@@ -197,12 +193,12 @@ formBtn.addEventListener('click', function() {
   if (!isError) {
     createNewMessage(username, email, msg);
     console.log(messages);
-    alert('Message sent!');
+    alert("Message sent!");
 
     // Очищуємо поля
-    inputName.value = '';
-    inputEmail.value = '';
-    inputMsg.value = '';
+    inputName.value = "";
+    inputEmail.value = "";
+    inputMsg.value = "";
 
     // Повертаємо дефолтний колір
     setBorderColor(inputName, COLOR_DEFAULT);
@@ -213,7 +209,6 @@ formBtn.addEventListener('click', function() {
     hideEmailError();
   }
 });
-
 
 // Додаткові обробники подій focus / input / blur
 function handleFocus(e) {
@@ -257,10 +252,10 @@ function handleBlur(e) {
 }
 
 // Обробники focus / input / blur на всі 3 поля
-[inputName, inputEmail, inputMsg].forEach(field => {
-  field.addEventListener('focus', handleFocus);
-  field.addEventListener('input', handleInput);
-  field.addEventListener('blur', handleBlur);
+[inputName, inputEmail, inputMsg].forEach((field) => {
+  field.addEventListener("focus", handleFocus);
+  field.addEventListener("input", handleInput);
+  field.addEventListener("blur", handleBlur);
 });
 
 // SLIDER
@@ -269,9 +264,9 @@ let currentSlide = 0;
 function showSlide(index) {
   slides.forEach((slide, i) => {
     // Показуємо лише той, що співпадає з index
-    slide.classList.toggle('active', i === index);
+    slide.classList.toggle("active", i === index);
 
-    const slideIndexEl = slide.querySelector('.slide-index');
+    const slideIndexEl = slide.querySelector(".slide-index");
 
     if (slideIndexEl) {
       slideIndexEl.textContent = `${i + 1} / ${slides.length}`;
@@ -292,24 +287,21 @@ function nextSlide() {
   if (currentSlide >= slides.length) {
     currentSlide = 0;
   }
- showSlide(currentSlide);
+  showSlide(currentSlide);
 }
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
 
 // Показуємо початковий слайд
 showSlide(currentSlide);
 
-
 // CURRENT YEAR
 const getCurrentYear = () => {
-  const container = document.querySelector('.year');
+  const container = document.querySelector(".year");
 
   let year = new Date().getFullYear();
-  return container.innerText = year;
-}
+  return (container.innerText = year);
+};
 
 getCurrentYear();
-
-
