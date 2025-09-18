@@ -53,7 +53,7 @@ Different implementations of the site are provided:
 
 ## Project Structure
 ```bash
-auto-repair-shop/
+car-repair-workshop/
 │── workshop.html        # Static HTML version
 │── workshop2.html       # Bootstrap version
 │── workshop.php         # PHP version
