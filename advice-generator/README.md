@@ -26,11 +26,11 @@ The project was designed to be simple and user-friendly, delivering a motivation
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd <project-folder>
+git clone https://github.com/e1em9nt/projects.git
+cd projects/advice-generator
 ```
 2. **Open the project**  
-Open **index.html** in your preferred browser.
+Open `index.html` in your preferred browser.
 
 ---  
 
