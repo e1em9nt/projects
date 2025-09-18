@@ -44,7 +44,7 @@ Different implementations of the site are provided:
    ```
 2. Navigate to the project folder:
    ```bash
-   cd projects/car-repair-workshop
+   cd car-repair-workshop
    ```
 3. Open one of the HTML files in your browser
 4. `workshop.php` requires running in a PHP-enabled server.
