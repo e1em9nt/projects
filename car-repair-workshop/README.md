@@ -40,7 +40,7 @@ Different implementations of the site are provided:
 ## How to Run the Project Locally
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/e1em9nt/my-projects.git
+   git clone https://github.com/e1em9nt/projects.git
    ```
 2. Navigate to the project folder:
    ```bash
