@@ -1,319 +1,394 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	position: relative;
-	color: black;
-	font-family: "Montserrat";
-	font-size: 20px;
+  position: relative;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 20px;
 }
 header {
-	background-color: #F1FDFF;
-	/*background-image: url(./assets/medium-shot-woman-holding-ukranian-flag1.png);*/
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: contain;
-	height: 90vh;
+  background-color: #f1fdff;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 90vh;
+  position: relative;
+}
+.hidden {
+  display: none;
 }
 .section {
-	/*min-height: 100vh;*/
-	margin: 2% 6%;
-	/*width: 100%;*/
+  margin: 2% 6%;
 }
 h1 {
-	color: #9AD2DE;
-	font-size: 4.65em;
-	text-transform: uppercase;
-	letter-spacing: -2%;
-	line-height: 94.9%;
-	font-weight: 900;
-	width: min-content;
-	padding-top: 1%;
+  color: #9ad2de;
+  font-size: 4.65em;
+  text-transform: uppercase;
+  letter-spacing: -2%;
+  line-height: 94.9%;
+  font-weight: 900;
+  width: min-content;
+  padding-top: 1%;
 }
 body h2 {
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 3em;
-	margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 3em;
+  margin-top: 50px;
 }
+.logo {
+  display: inline-block;
+  margin: 3.5% 6%;
+  width: 60px;
+  height: 60px;
 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.hamburger {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #7ae5fd;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+nav {
+  display: inline-flex;
+  width: 80%;
+  float: right;
+}
 .nav-bar {
-	display: flex;
-	list-style: none;
+  display: inline-flex;
+  list-style: none;
+  justify-content: flex-end;
+
+  margin: 6%;
+  width: 100%;
+  z-index: 1;
 }
+
 .nav-bar a {
-	text-decoration: none;
-	font-size: .9em;
-	color: inherit;
-	padding: 0px 15px;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: inherit;
+  padding: 0px 15px;
 }
-.nav-bar li {
-	padding-right: 20px;
-	font-weight: 300;
+.nav-bar li:not(:last-child) {
+  padding-right: 20px;
+  font-weight: 300;
 }
-.nav-bar .logo {
-	padding: 3.5% 5%;
-	width: 60px;
-	height: 60px;
 
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.nav-bar .nav-right {
-	display: inline-flex;
-	justify-content: flex-end;
-
-	padding: 4.7%;
-	width: 100%;
-	z-index: 1;
-}
 body .blue-btn {
-	background-color: #7AE5FD;
-	border: 2px solid transparent;
-	border-radius: 90px;
-	text-transform: uppercase;
-	font-size: .9em;
-	font-weight: 300;
-	padding: 15px 25px;
+  background-color: #7ae5fd;
+  border: 2px solid transparent;
+  border-radius: 90px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 15px 25px;
 }
 body .blue-btn:hover {
-	border-color: #E9E3DC;
+  border-color: #e9e3dc;
 }
 .section-1 p {
-	font-weight: 300;
-	font-size: 20px;
+  font-weight: 300;
+  font-size: 20px;
 
-	margin-top: 5%;
+  margin-top: 5%;
 }
 .section-1 .flag {
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	height: 90vh;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 90vh;
+}
+.flag-md {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 70vh;
 }
 
 /* !SECTION 2 */
 .section-2 h2 {
-	margin-top: 9vh;
+  margin-top: 9vh;
 }
 
 /* !SECTION 3 */
 .text-centered {
-	text-align: center;
+  text-align: center;
 }
 .scene-num {
-	font-size: 1.35em;
-	margin: 7px 0;
+  font-size: 1.35em;
+  margin: 7px 0;
 }
 .blue-text {
-	color: #73A6B1;
+  color: #73a6b1;
 }
 .scene {
-	background-color: #F1FDFF;
-	border-radius: 2%;
-	width: 100%;
-	margin: 5% auto;
-/*	min-height: auto;*/
-	padding: 40px 40px 10px;
-	/*position: relative;*/
+  background-color: #f1fdff;
+  border-radius: 2%;
+  width: 100%;
+  margin: 5% auto;
+  padding: 40px 40px 10px;
 
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .scene .scene-info {
-	width: 50%;
+  width: 50%;
 }
 .scene .scene-info .scene-name {
-	margin-bottom: 10px;
-	font-size: 2.3em;
+  margin-bottom: 10px;
+  font-size: 2.3em;
 }
 .scene h3 {
-	font-weight: normal;
-	font-size: 1.5rem;
-	text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .scene ul {
-	list-style: none;
-	margin-top: 45px;
+  list-style: none;
+  margin-top: 45px;
 }
 .scene .scene-info ul li {
-	font-size: .8em;
-	margin-bottom: 35px;
+  font-size: 0.8em;
+  margin-bottom: 35px;
 }
 .hours {
-	color: #3D8C9D;
-	margin-top: 1%;
+  color: #3d8c9d;
+  margin-top: 1%;
 }
 .scene .scene-img .scene-photo {
-	width: 100%;
-	height: auto;
-	padding: 10px 0 40px;
+  width: 38vw;
+  height: auto;
+  padding: 10px 0 40px;
 }
-/*.scene1-info {
-	padding-left: 25px;
-	margin-top: 10px;
-	margin-bottom: 35px;
-}*/
 .centered-btn {
-	position: relative;
-	height: 60px;
+  position: relative;
+  height: 60px;
 }
-/*#program .blue-btn:nth-last-child(1n) {
-	
-}*/
 .centered-btn .blue-btn {
-	position: absolute;
-	top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* !SECTION 3 */
-/*.present-info {
-	margin: 0;
-	background-image: url(./assets/prsnt_back.png);
-	height: 738px;
-	width: 100%;
-}*/
 .present-info {
-	position: relative;
-	margin-top: 5vh;
+  position: relative;
+  margin-top: 5vh;
 }
 .present-info > img {
-	height: 99vh;
-	width: 99%;
-
+  height: 99vh;
+  width: 99%;
 }
 .present-container {
-	background-color: #F1FDFF;
-	border-radius: 2.5%;
-	position: absolute;
-	left: -6%;
-	top: 33%;
-	height: 277px;
-	width: 100%;
-	display: flex;
+  background-color: #f1fdff;
+  border-radius: 2.5%;
+  position: absolute;
+  left: -6%;
+  top: 33%;
+  height: 277px;
+  width: 100%;
+  display: flex;
 }
 .present-container p {
-	font-size: 1.4em;
-	width: 40%;
-	margin: 40px;
-	align-self: center;
+  font-size: 1.4em;
+  width: 40%;
+  margin: 40px;
+  align-self: center;
 }
 .present-container img {
-	position: absolute;
+  position: absolute;
 }
 .present-container img[alt*="T-shirt"] {
-	right: 13%;
-	top: -30%;
+  right: 13%;
+  top: -30%;
 }
 .present-container img[alt*="flag"] {
-	right: 10%;
-	bottom: -30%;
+  right: 10%;
+  bottom: -30%;
 }
 
 /* !SECTION 4 */
 .how-to-get .goal {
-	margin: 77px;
+  margin: 77px;
 }
 .goal p {
-	font-size: 1.35em;
+  font-size: 1.35em;
 }
 .goal .donation-amount {
-	font-size: 3em;
-	margin-top: 17px;
+  font-size: 3em;
+  margin-top: 17px;
 }
 .goal .vector {
-	color: #9AD2DE;
+  color: #9ad2de;
 }
 .goal .blue-btn {
-	margin-top: 57px;
-	margin-bottom: 80px;
+  margin-top: 57px;
+  margin-bottom: 80px;
 }
 
 /* !FOOTER */
 footer {
-	background-color: #F8F9DE;
-	padding: 3% 6%;
+  background-color: #f8f9de;
+  padding: 3% 6%;
 }
 .contact-container {
-	display: flex;
-	gap: 0 258px;
+  display: flex;
+  gap: 0 258px;
 }
 .contact-container h2 {
-	margin-top: 0;
+  margin-top: 0;
 }
 .contact-container ul {
-	list-style: none;
+  list-style: none;
 }
 .contact-container a {
-	text-decoration: none; 
+  text-decoration: none;
 }
 .contact-container ul li {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .contact-num {
-	font-weight: bold;
+  font-weight: bold;
 }
 .form-box {
-	background-color: #FFFFFF;
-	gap: 89px;
-	height: 455px;
+  background-color: #ffffff;
+  gap: 89px;
+  height: 455px;
 }
 .form-box img {
-	width: 35vw;
-	height: 70%;
+  width: 33vw;
+  height: 40vh;
 }
 .form-box .input-form {
-	display: block;
-	margin: 0 auto;
-	width: 40%;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
 }
 .form-box .input-form p {
-	font-size: 1.35em;
-	margin-bottom: 35px;
+  font-size: 1.35em;
+  margin-bottom: 35px;
 }
 .form-box .input-form form {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 31px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
 }
 form input[type="text"] {
-	border-radius: 90px;
-	padding: 15px 25px;
-	border: 2px solid transparent;
-	background-color: #F8F9DE;
-	font-size: inherit;
+  border-radius: 90px;
+  padding: 15px 25px;
+  border: 2px solid transparent;
+  background-color: #f8f9de;
+  font-size: inherit;
 }
 form input::placeholder {
-	color: black;
-	font-weight: 200;
+  color: black;
+  font-weight: 200;
 }
-/*.input-form form input[type="button"]:hover {
-	border: none;
-}*/
-.input-form form input:hover, form input:focus {
-	border-color: #1E1E1E;
+.input-form form input:hover,
+form input:focus {
+  border-color: #1e1e1e;
 }
-/*(1105px <= width <= 1338px) */
 
 @media (max-width: 1330px) {
-	.section-1 .flag {
-		display: none;
-	}
-	header {
-		background-image: url(./assets/md_woman-holding-ukranian-flag.png);
-	}
+  .section-1 .flag {
+    display: none;
+  }
+  header {
+    background-image: url(./assets/md_woman-holding-ukranian-flag.png);
+  }
 }
 @media (993px <= width <= 1200px) {
-	body {
-		font-size: 18px;
-	}
+  body {
+    font-size: 18px;
+  }
+  .nav-bar {
+    margin: 6.7%;
+  }
 }
-
+@media (max-width: 992px) {
+  header {
+    background-image: none;
+  }
+}
+@media (768px <= width <= 992px) {
+  body {
+    font-size: 16.6px;
+  }
+  .nav-bar {
+    margin: 7.3%;
+  }
+  .nav-bar li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .section-1 .flag {
+    display: none;
+  }
+  .flag-md {
+    display: inline;
+    height: 63vh;
+  }
+  .nav-bar .blue-btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  .logo {
+    opacity: 0;
+  }
+  .flag-md {
+    display: inline;
+    height: 60vh;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: inline-flex;
+    float: right;
+    margin: 6.5%;
+  }
+  .hamburger span {
+    display: block;
+  }
+}
+@media (max-width: 665px) {
+  h1 {
+    font-size: 50px;
+  }
+  .section-1 p {
+    font-size: 16px;
+  }
+  .text-centered {
+    text-align: left;
+  }
+  .scene {
+    flex-direction: column-reverse;
+  }
+  .scene .scene-info,
+  .scene .scene-img .scene-photo {
+    width: 100%;
+  }
+}
