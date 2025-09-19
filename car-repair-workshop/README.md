@@ -1,7 +1,7 @@
 # Auto Repair Shop Website
 
 ## Project Description
-This project is a **web application for an auto repair shop**.  
+This project is a **web application for an Auto Repair Workshop**.  
 It provides information about the company, its services, and contact options. Visitors can:
 - Learn more about the company.
 - Browse offered services.
@@ -10,9 +10,7 @@ It provides information about the company, its services, and contact options. Vi
 Different implementations of the site are provided:
 1. **workshop.html** – A custom HTML & CSS version.  
 2. **workshop2.html** – A Bootstrap 5–based responsive version.  
-3. **workshop.php** – A PHP version .
-
----
+3. **workshop.php** – A PHP version.
 
 ## Tech Stack
 - **Frontend:**
@@ -24,19 +22,6 @@ Different implementations of the site are provided:
 - **Backend:**
   - PHP
 
---- 
-
-## Features
-- Company description section
-- Services list with visuals
-- Contact section with:
-  - Phone call button
-  - Feedback form (Name, Email, Phone, Message)
-- Responsive design (`workshop2.html` with Bootstrap)
-- Styled components with hover effects and responsive media queries
-
---- 
-
 ## How to Run the Project Locally
 1. Clone or download this repository:
    ```bash
@@ -46,10 +31,8 @@ Different implementations of the site are provided:
    ```bash
    cd car-repair-workshop
    ```
-3. Open one of the HTML files in your browser
+3. Open one of the HTML files in your browser.
 4. `workshop.php` requires running in a PHP-enabled server.
-
----  
 
 ## Project Structure
 ```bash
@@ -61,11 +44,9 @@ car-repair-workshop/
 │── other.css            # Additional styles (animations, slider)
 │── script_ad.js         # JavaScript file (ads/interaction logic)
 │── assets/              # Images and icons
-```
+```  
 
----
-
-## Improvements & Known Limitations
+## Known Limitations
 - **Form Handling:** Currently, the feedback form does not process or store submissions. Needs backend integration.  
 - **Accessibility:** Could be improved with ARIA labels, alt text optimization, and keyboard navigation.  
 - **Validation:** Client-side JavaScript validation could be added to enhance user experience.  
@@ -73,11 +54,8 @@ car-repair-workshop/
 - **SEO Optimization:** Add meta descriptions, structured data, and Open Graph tags.  
 - **Deployment:** Project can be hosted on GitHub Pages (HTML-only version) or a PHP server for backend support.  
 
----
-
 ## Future Enhancements
 - Implement user authentication for appointment tracking  
 - Add admin dashboard to manage bookings  
 - Connect to a database (MySQL/PostgreSQL) for storing client requests  
 - Integrate Google Maps for location display  
-
