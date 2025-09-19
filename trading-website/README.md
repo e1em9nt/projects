@@ -1,4 +1,4 @@
-# Trading webdite
+# Trading website
 
 ## Description
 This project is a modern, responsive front-end website for a fictional trading platform, designed to deliver an engaging and user-friendly experience. The platform provides essential information about trading services, offering a smooth navigation experience across multiple sections such as "How It Works", "About", "Getting Started", and "FAQs".  
