@@ -381,9 +381,6 @@ form input:focus {
   .section-1 p {
     font-size: 16px;
   }
-  .text-centered {
-    text-align: left;
-  }
   .scene {
     flex-direction: column-reverse;
   }
