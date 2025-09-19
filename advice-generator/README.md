@@ -5,22 +5,16 @@ Random Quotes Generator is a **web application** that fetches and displays a ran
 
 The project was designed to be simple and user-friendly, delivering a motivational experience with each quote.
 
----
-
 ## Tech Stack
 - **HTML** – Page structure  
 - **CSS** – Styling and layout  
 - **JavaScript** – Logic for fetching and displaying quotes, managing button state  
 - **API** – [Adviceslip API](https://api.adviceslip.com/advice) for random advice  
 
----
-
 ## Features
 - **Random Advice Generation:** Click the "Get Advice!" button to fetch a new random quote.  
 - **Error Handling:** Displays a fallback quote if the API request fails or there is no internet connection.  
 - **Responsive Design:** Adapts to different screen sizes for a consistent user experience on mobile and desktop.
-
----
 
 ## How to Run the Project Locally
 
@@ -29,12 +23,8 @@ The project was designed to be simple and user-friendly, delivering a motivation
 git clone https://github.com/e1em9nt/projects.git
 cd advice-generator
 ```
-2. **Open the project**  
-Open `index.html` in your preferred browser.
-
----  
+2. **Open** `index.html` in your preferred browser.
 
 ## Known Limitations  
 - **Limited Mobile Responsiveness**: works on most devices but may need tweaks for very small screens.
 - **No User Customization**: cannot filter quotes or save favorites.  
-
