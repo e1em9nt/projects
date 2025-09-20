@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Sign Up Form</title>
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self';"
-    />
-    <link rel="stylesheet" href="/src/css/signUpForm.css" />
-    <script type="text/javascript" src="/src/form.js" defer></script>
+    /> -->
+    <link rel="stylesheet" href="../css/signUpForm.css" />
+    <!-- href="/src/css/signUpForm.css", src="/src/form.js" -->
+    <script type="text/javascript" src="../form.js" defer></script>
   </head>
 
   <body>
@@ -52,18 +53,26 @@
 
           <div class="signup-form__pswd-strength hidden">
             <p>Your password contain:</p>
-            <p class="signup-form__pswd-strength--easy signup-form__pswd-strength--contain">
+            <p
+              class="signup-form__pswd-strength--easy signup-form__pswd-strength--contain"
+            >
               Only letters/digits/symbols
             </p>
-            <p class="signup-form__pswd-strength--medium signup-form__pswd-strength--contain">
+            <p
+              class="signup-form__pswd-strength--medium signup-form__pswd-strength--contain"
+            >
               Combination of letters-symbols/ letter-digits/ digits-symbols
             </p>
-            <p class="signup-form__pswd-strength--strong signup-form__pswd-strength--contain">
+            <p
+              class="signup-form__pswd-strength--strong signup-form__pswd-strength--contain"
+            >
               Letters, symbols and numbers
             </p>
           </div>
 
-          <label for="pswd-confirm" class="signup-form__label signup-form__label--confirm"
+          <label
+            for="pswd-confirm"
+            class="signup-form__label signup-form__label--confirm"
             >Confirm password:</label
           >
           <input
@@ -79,10 +88,18 @@
 
         <p class="signup-form__more-info">
           Already here?
-          <a href="signInForm.html" class="signup-form__link signup-form__link--signin">Sign In!</a>
+          <a
+            href="signInForm.html"
+            class="signup-form__link signup-form__link--signin"
+            >Sign In!</a
+          >
         </p>
 
-        <button class="signup-form__btn signup-form__btn--submit" type="submit" form="signup">
+        <button
+          class="signup-form__btn signup-form__btn--submit"
+          type="submit"
+          form="signup"
+        >
           Sign Up
         </button>
       </section>

@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Sign In Form</title>
-    <meta
+    <!-- <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self';"
-    />
-    <link rel="stylesheet" href="/src/css/signInForm.css" />
-    <script type="text/javascript" src="/src/forms.js" defer></script>
+    /> -->
+    <link rel="stylesheet" href="../css/signInForm.css" />
+    <!-- href="/src/css/signInForm.css" -->
   </head>
 
   <body>
@@ -45,13 +45,23 @@
           </p>
 
           <p class="signin-form__more-info">
-            <a href="#" class="signin-form__link signin-form__link--forgot"> Forgot Password? </a>
-            <a href="signUpForm.html" class="signin-form__link signin-form__link--signup">
+            <a href="#" class="signin-form__link signin-form__link--forgot">
+              Forgot Password?
+            </a>
+            <a
+              href="signUpForm.html"
+              class="signin-form__link signin-form__link--signup"
+            >
               Sign Up!
             </a>
           </p>
 
-          <button type="submit" class="signin-form__btn signin-form__btn--submit">Sign In</button>
+          <button
+            type="submit"
+            class="signin-form__btn signin-form__btn--submit"
+          >
+            Sign In
+          </button>
         </form>
       </section>
     </main>
