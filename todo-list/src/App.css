@@ -1,0 +1,73 @@
+/* App Component */
+.to-do {
+  margin: 100px 0px;
+}
+.to-do__create {
+  margin-bottom: 81px;
+}
+.to-do__btn--add {
+  width: 122px;
+  height: 65px;
+  border: none;
+  background-color: #5275a0;
+
+  color: white;
+  font-size: inherit;
+
+  cursor: pointer;
+}
+
+.to-do__items {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+li {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Input Component */
+.to-do__input {
+  background-color: #ecf3ff;
+  width: 554px;
+  min-height: 65px;
+  border: none;
+  outline: none;
+  padding: 6px 30px 6px 88px;
+
+  font-size: inherit;
+  color: #00000099;
+}
+/* Checkbox Component */
+.to-do__input--checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.2;
+}
+.to-do__input--checkbox input {
+  transform: scale(2);
+  accent-color: #8c72b7;
+}
+
+/* UDButtons Component */
+.to-do__btns {
+  display: flex;
+  gap: 10px;
+}
+.to-do__btn--edit,
+.to-do__btn--delete {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
