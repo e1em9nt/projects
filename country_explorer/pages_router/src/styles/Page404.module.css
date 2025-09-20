@@ -1,0 +1,44 @@
+/* Not found page */
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  height: 100vh;
+
+  background-color: var(--overlay);
+}
+.status {
+  font-size: 5rem;
+  color: var(--text);
+}
+.description {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.btn-home {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--card-bg);
+  box-shadow: var(--box-shadow);
+
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-home:hover,
+.btn-home:focus {
+  background-color: var(--btn-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+  outline: none;
+}

@@ -1,0 +1,34 @@
+.container {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.country {
+  background: var(--card-bg);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  width: clamp(260px, 30vw, 340px);
+
+  padding: 0 30px 30px;
+}
+.flag {
+  position: relative;
+  width: clamp(260px, 30vw, 340px);
+  aspect-ratio: 130/80;
+}

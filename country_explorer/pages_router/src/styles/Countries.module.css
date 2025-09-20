@@ -1,0 +1,51 @@
+/*  List & Cards */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  justify-content: center;
+
+  margin: 2.5rem;
+}
+.card,
+.country {
+  background: var(--card-bg);
+
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.card {
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  width: clamp(220px, 20vw, 280px);
+
+  padding: 0 20px 20px;
+}
+.country {
+  width: 100%;
+}
+
+.country-name {
+  min-height: 45px;
+}
+.flag {
+  position: relative;
+  width: clamp(220px, 20vw, 280px);
+  aspect-ratio: 130/80;
+}
+.fav-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  align-self: flex-end;
+}

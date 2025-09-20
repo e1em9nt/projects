@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400..900&display=swap');
+
+:root {
+  --background: #fff;
+  --text: #333;
+
+  /* nav */
+  --nav-bg: #fff;
+  --nav-border: #e2e2e2;
+
+  /* cards, country detail */
+  --card-bg: #fff;
+  --box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
+  /* extra */
+  --overlay: rgba(0, 0, 0, 0.1);
+  --text-muted: #555;
+  --hover-bg: #f5f5f5;
+  --btn-hover-bg: #f7f7f7;
+  --border-default: #ccc;
+  --border-hover: #999;
+}
+
+[data-theme='dark'] {
+  --background: #121212;
+  --text: #eee;
+
+  /* nav */
+  --nav-bg: #1f1f1f;
+  --nav-border: #333;
+
+  /* cards, country detail */
+  --card-bg: #1f1f1f;
+  --box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+
+  /* extras */
+  --overlay: rgba(255, 255, 255, 0.1);
+  --text-muted: #aaa;
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  --btn-hover-bg: rgba(255, 255, 255, 0.15);
+  --border-default: #555;
+  --border-hover: #888;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  padding: 1.5rem 2rem;
+
+  font-weight: 500;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: var(--box-shadow);
+}
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .links a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+nav .links a:hover {
+  background-color: var(--hover-bg);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* PAGES */
+/* random page */
+.random-country {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 73vh;
+}
+
+/* not-found page */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+
+  min-height: 85vh;
+}
+.not-found__status {
+  font-size: 5rem;
+  color: var(--text);
+}
+.not-found__description {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.not-found__btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--card-bg);
+  box-shadow: var(--box-shadow);
+
+  font-size: 1rem;
+  color: var(--text);
+  cursor: pointer;
+
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.not-found__btn:hover,
+.not-found__btn:focus {
+  background-color: var(--btn-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+  outline: none;
+}
+
+/* COMPONENTS */
+/* CountriesList component */
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.75rem;
+  justify-content: center;
+
+  margin: 2.5rem;
+}
+.countries-list__item,
+.countries-list__link {
+  background: var(--card-bg);
+
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.countries-list__item {
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  width: clamp(220px, 20vw, 280px);
+
+  padding: 0 20px 20px;
+}
+.countries-list__link {
+  width: 100%;
+}
+
+.countries-list__name,
+.country-card__name {
+  min-height: 45px;
+}
+.countries-list__flag {
+  position: relative;
+  width: clamp(220px, 20vw, 280px);
+  aspect-ratio: 130/80;
+}
+
+/* CountryCard component */
+.country-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  background: var(--card-bg);
+  overflow: hidden;
+
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 6px;
+  width: clamp(260px, 30vw, 340px);
+
+  padding: 0 30px 30px;
+}
+.country-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.country-card__flag {
+  position: relative;
+  width: clamp(260px, 30vw, 340px);
+  aspect-ratio: 130/80;
+}
+
+/* FavoriteIcon component */
+.favorite-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* FavoriteCountries component */
+.favorite-countries__empty {
+  font-size: 2rem;
+}
+
+/* HomePage component */
+.home__filter {
+  margin: 1.5rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/* SearchBar & RegionFilter components */
+label[for='region-filter'],
+label[for='country-filter'] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.region-filter__select,
+.search-bar__input {
+  font-size: 1rem;
+  color: var(--text);
+
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--border-default);
+  border-radius: 0.25rem;
+  background: var(--background);
+
+  transition: border-color 0.2s ease;
+}
+.region-filter__select:hover,
+.search-bar__input:hover {
+  border-color: var(--border-hover);
+}
+.region-filter__select:focus,
+.search-bar__input:focus {
+  outline: none;
+  border-color: var(--text);
+}
+.search-bar__input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Loading component */
+.country__loading {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.country__loading--spinner {
+  width: 70px;
+  height: 70px;
+
+  border: 7px solid var(--border-hover);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+
+  display: inline-block;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
