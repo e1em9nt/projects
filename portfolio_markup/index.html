@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="mobile.css"
+      media="screen and (max-width: 600px)"
+    />
+    <script src="script.js" defer></script>
+    <title>Homework 5 - CSS Advanced by Anastasiia Dobrovetska</title>
+  </head>
+  <body>
+    <header>
+      <button type="button" class="theme-toggle">
+        <img
+          src="assets/vector-light.png"
+          class="theme-toggle__icon theme-toggle__icon--light"
+          alt="Toggle Theme"
+        />
+        <img
+          src="assets/vector-dark.png"
+          class="theme-toggle__icon theme-toggle__icon--dark"
+          alt="Toggle Theme"
+        />
+      </button>
+    </header>
+
+    <main>
+      <section class="profile">
+        <div>
+          <img src="assets/profile-picture.png" class="profile__picture" alt="Profile picture" />
+          <div class="profile__details">
+            <h1 class="profile__name">Victor Alvarado</h1>
+            <p>Software Engineer</p>
+            <ul class="profile__social">
+              <li class="profile__social-item">
+                <a
+                  href="#"
+                  class="profile__social-link profile__social-link--github fa-brands fa-github"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="profile__social-item">
+                <a
+                  href="#"
+                  class="profile__social-link profile__social-link--twitter fa-brands fa-twitter"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="profile__social-item">
+                <a
+                  href="#"
+                  class="profile__social-link profile__social-link--linkedin fa-brands fa-linkedin"
+                  target="_blank"
+                ></a>
+              </li>
+              <li class="profile__social-item">
+                <a
+                  href="#"
+                  class="profile__social-link profile__social-link--youtube fa-brands fa-youtube"
+                  target="_blank"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="profile__stats">
+          <div class="profile__stat">
+            <p class="profile__stat__val profile__stat-num">7</p>
+            <p class="profile__stat__label">Years of work <br />expierence</p>
+          </div>
+          <div class="profile__stat">
+            <p class="profile__stat__val"><span class="profile__stat-num">50</span>&plus;</p>
+            <p class="profile__stat__label">Completed <br />projects</p>
+          </div>
+          <div class="profile__stat">
+            <p class="profile__stat__val"><span class="profile__stat-num">20</span>&plus;</p>
+            <p class="profile__stat__label profile__stat__label--desktop">
+              Satisfied <br />customers
+            </p>
+            <p class="profile__stat__label profile__stat__label--mobile">
+              Personal side <br />projects
+            </p>
+          </div>
+        </div>
+
+        <div class="profile__actions">
+          <a href="#" class="profile__action profile__action--download"
+            >Download CV <img src="assets/download.png" alt="Download CV"
+          /></a>
+          <a href="#" class="profile__action profile__action--contact">Contact me</a>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio__tabs" role="tablist">
+          <button
+            type="button"
+            role="tab"
+            class="portfolio__tab portfolio__tab--active"
+            data-target="portfolio__gallery"
+          >
+            Portfolio
+          </button>
+          <button type="button" role="tab" class="portfolio__tab" data-target="portfolio__skills">
+            Skills
+          </button>
+        </div>
+        <div id="portfolio__gallery" class="portfolio__gallery">
+          <div class="portfolio__img">
+            <img src="assets/proj-1.png" alt="Project 1" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 1"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/proj-2.png" alt="Project 2" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 2"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/proj-3.png" alt="Project 3" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 3"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/proj-4.png" alt="Project 4" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 4"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/proj-5.png" alt="Project 5" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 5"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+          <div class="portfolio__img">
+            <img src="assets/proj-6.png" alt="Project 6" />
+            <div class="portfolio__overlay">
+              <h2>SmarterTrading441</h2>
+              <p>Landing page of SmarterTrading411 created using wordPress</p>
+              <a href="#"
+                ><img
+                  src="assets/link.png"
+                  alt="Link to project 6"
+                  class="portfolio__overlay__icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside class="scroll-to-top scroll-to-top--mobile">
+        <button type="button" class="scroll-to-top__button">Scroll <br />to top</button>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Victor Alvarado. <span class="footer__year"></span> All rights reserved</p>
+    </footer>
+  </body>
+</html>

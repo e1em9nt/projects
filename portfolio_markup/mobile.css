@@ -1,0 +1,50 @@
+.profile > div:first-child {
+  flex-direction: column;
+}
+.profile__details {
+  text-align: center;
+}
+.profile__social {
+  justify-content: center;
+}
+.profile__social-link {
+  margin-top: 20px;
+}
+.profile__stats {
+  justify-content: space-around;
+}
+[data-theme='dark'] .profile__stat__val {
+  color: #c3c7cb;
+}
+.profile__stat__label--desktop {
+  display: none;
+}
+.profile__stat__label--mobile {
+  display: block;
+}
+.scroll-to-top:hover {
+  transform: scale(1.1);
+}
+.scroll-to-top--mobile,
+.scroll-to-top__button {
+  cursor: pointer;
+}
+.scroll-to-top--mobile {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-scroll);
+  background-color: var(--bg-yellow);
+
+  position: fixed;
+  bottom: 12%;
+  right: 5%;
+  height: 55px;
+  aspect-ratio: 1;
+}
+.scroll-to-top__button {
+  text-transform: uppercase;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+}
