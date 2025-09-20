@@ -1,0 +1,51 @@
+{
+  "name": "using-owasp-top10-in-frontend-development",
+  "version": "1.0.0",
+  "description": "Client-side registration form implementing OWASP Top 10 2021 security controls: XSS, Security Misconfiguration, Vulnerable and Outdated Components, Identification and Authentication Failures and Software and Data Integrity Failures prevention.",
+  "main": "form.js",
+  "type": "module",
+  "scripts": {
+    "build:signup": "sass src/scss/signUpForm.scss src/css/signUpForm.css --style=compressed --no-source-map",
+    "build:signin": "sass src/scss/signInForm.scss src/css/signInForm.css --style=compressed --no-source-map",
+    "monitor": "sass --watch src/scss/signUpForm.scss:src/css/signUpForm.css src/scss/signInForm.scss:src/css/signInForm.css --source-map",
+    "audit": "npm audit --audit-level=high"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/e1em9nt/my-projects.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "js",
+    "owasp",
+    "owasp-top10",
+    "vulnerabilities",
+    "injection",
+    "xss",
+    "security-misconfiguration",
+    "vulnerable-and-outdated-component",
+    "identification-failures",
+    "software-and-data-integrity",
+    "prevention"
+  ],
+  "author": "Anastasiia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e1em9nt/my-projects/issues"
+  },
+  "homepage": "https://github.com/e1em9nt/my-projects#readme",
+  "devDependencies": {
+    "@eslint/css": "^0.8.1",
+    "@eslint/js": "^9.28.0",
+    "@eslint/json": "^0.12.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "sass": "^1.89.1"
+  }
+}

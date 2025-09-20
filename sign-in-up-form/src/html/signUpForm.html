@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self';"
+    />
+    <link rel="stylesheet" href="/src/css/signUpForm.css" />
+    <script type="text/javascript" src="/src/form.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="signup-form" class="signup-form">
+        <p class="signup-form__title">Sign Up</p>
+        <form id="signup" method="post">
+          <input
+            type="text"
+            placeholder="Username"
+            pattern="[A-Za-z0-9.]{3,35}"
+            title="Username must be between 3 and 35 characters long, letters and digits only"
+            name="username"
+            id="input-username"
+            class="signup-form__input"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email@domain.com"
+            pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+            name="email"
+            class="signup-form__input"
+            id="input-email"
+            required
+          />
+          <p class="signup-form__error signup-form__error--email hidden">
+            E-mail address is not valid
+          </p>
+          <input
+            type="password"
+            placeholder="Password"
+            pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}"
+            title="Password must be at least 8 characters long and contain at least one letter, one number, and one special character"
+            name="password"
+            id="input-pswd"
+            class="signup-form__input"
+            required
+          />
+
+          <div class="signup-form__pswd-strength hidden">
+            <p>Your password contain:</p>
+            <p class="signup-form__pswd-strength--easy signup-form__pswd-strength--contain">
+              Only letters/digits/symbols
+            </p>
+            <p class="signup-form__pswd-strength--medium signup-form__pswd-strength--contain">
+              Combination of letters-symbols/ letter-digits/ digits-symbols
+            </p>
+            <p class="signup-form__pswd-strength--strong signup-form__pswd-strength--contain">
+              Letters, symbols and numbers
+            </p>
+          </div>
+
+          <label for="pswd-confirm" class="signup-form__label signup-form__label--confirm"
+            >Confirm password:</label
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            name="confirm-pswd"
+            id="pswd-confirm"
+            class="signup-form__input"
+            required="required"
+          />
+          <p class="signup-form__error signup-form__error--confirm hidden"></p>
+        </form>
+
+        <p class="signup-form__more-info">
+          Already here?
+          <a href="signInForm.html" class="signup-form__link signup-form__link--signin">Sign In!</a>
+        </p>
+
+        <button class="signup-form__btn signup-form__btn--submit" type="submit" form="signup">
+          Sign Up
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

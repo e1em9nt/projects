@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  background-color: #494d5f;
+  color: white;
+  font-family: Verdana;
+}
+html,
+body,
+main {
+  min-height: 100vh;
+}
+.hidden {
+  display: none;
+}

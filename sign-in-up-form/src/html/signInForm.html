@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Sign In Form</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self';"
+    />
+    <link rel="stylesheet" href="/src/css/signInForm.css" />
+    <script type="text/javascript" src="/src/forms.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="signin-form" class="signin-form">
+        <p class="signin-form__title">Sign In</p>
+
+        <form id="signin" method="post" class="signin-form__body">
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            pattern="[A-Za-z0-9]{3,35}"
+            title="Username must be between 3 and 35 characters long, letters and digits only"
+            id="input-username"
+            class="signin-form__input signin-form__input--username"
+            required
+          />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,128}"
+            title="Password must be at least 8 characters long and contain at least one letter, one number, and one special character"
+            id="input-password"
+            class="signin-form__input signin-form__input--password"
+            required
+          />
+
+          <p class="signin-form__error signin-form__error--credentials hidden">
+            Invalid username or password
+          </p>
+
+          <p class="signin-form__more-info">
+            <a href="#" class="signin-form__link signin-form__link--forgot"> Forgot Password? </a>
+            <a href="signUpForm.html" class="signin-form__link signin-form__link--signup">
+              Sign Up!
+            </a>
+          </p>
+
+          <button type="submit" class="signin-form__btn signin-form__btn--submit">Sign In</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
